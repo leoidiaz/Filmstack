@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class HomeViewController: UIViewController {
     //MARK: - Properties
@@ -38,6 +39,9 @@ class HomeViewController: UIViewController {
     
     
     private func layoutView(){
+        collectionView.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
     }
 
 }
