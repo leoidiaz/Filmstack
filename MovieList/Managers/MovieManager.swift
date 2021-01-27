@@ -5,4 +5,21 @@
 //  Created by Leonardo Diaz on 1/22/21.
 //
 
-import Foundation
+import UIKit
+
+class MovieManager {
+    //    var allMovies: [Movie] = {[
+    //        Movie(title: "In the mood for love", director: "Wong Kar-wai", releaseDate: "2000", backgroundImage: UIImage(named: "background1")!),
+    //        Movie(title: "Jaws", director: "Steven Spielberg", releaseDate: "1975", backgroundImage: UIImage(named: "background2")!),
+    //        Movie(title: "Y tu mamá también", director: "Alfonso Cuarón", releaseDate: "2002", backgroundImage: UIImage(named: "background3")!),
+    //        Movie(title: "Psycho", director: "Alfred Hitchcock", releaseDate: "1960", backgroundImage: UIImage(named: "background4")!),
+    //    ]}()
+    var allMovies: [MovieViewModel] = {
+        [
+            MovieViewModel(movie: Movie(title: "In The Mood For Love", director: "Wong Kar-wai", releaseDate: "2000", backgroundImage: UIImage(named: "background1")!)),
+            MovieViewModel(movie: Movie(title: "Jaws", director: "Steven Spielberg", releaseDate: "1975", backgroundImage: UIImage(named: "background2")!)),
+            MovieViewModel(movie: Movie(title: "Y Tu Mamá También", director: "Alfonso Cuarón", releaseDate: "2002", backgroundImage: UIImage(named: "background3")!)),
+            MovieViewModel(movie:  Movie(title: "Psycho", director: "Alfred Hitchcock", releaseDate: "1960", backgroundImage: UIImage(named: "background4")!))
+        ]
+    }()
+}
