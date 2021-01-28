@@ -24,6 +24,8 @@
 		2935412125BA4AC0001500B3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2935412025BA4AC0001500B3 /* Movie.swift */; };
 		2935412525BA5234001500B3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2935412425BA5234001500B3 /* SnapKit */; };
 		29929B1225BCD54C00477575 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29929B1125BCD54C00477575 /* HeaderView.swift */; };
+		29D42B0825C382FF00CAAD06 /* background5.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D42B0625C382FF00CAAD06 /* background5.png */; };
+		29D42B0925C382FF00CAAD06 /* background6.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D42B0725C382FF00CAAD06 /* background6.png */; };
 		29ED2A2E25C20F6A00713192 /* AddMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ED2A2D25C20F6A00713192 /* AddMovieView.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		2935411C25BA497D001500B3 /* HomeViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerDataSource.swift; sourceTree = "<group>"; };
 		2935412025BA4AC0001500B3 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		29929B1125BCD54C00477575 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		29D42B0625C382FF00CAAD06 /* background5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background5.png; sourceTree = "<group>"; };
+		29D42B0725C382FF00CAAD06 /* background6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background6.png; sourceTree = "<group>"; };
 		29ED2A2D25C20F6A00713192 /* AddMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +84,8 @@
 		2925B18C25BB66BD00A3824B /* movieBackground */ = {
 			isa = PBXGroup;
 			children = (
+				29D42B0625C382FF00CAAD06 /* background5.png */,
+				29D42B0725C382FF00CAAD06 /* background6.png */,
 				2925B18E25BB66BD00A3824B /* background4.png */,
 				2925B19B25BB6C9100A3824B /* background2.png */,
 				2925B19D25BB6C9200A3824B /* background3.png */,
@@ -261,6 +267,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D42B0925C382FF00CAAD06 /* background6.png in Resources */,
+				29D42B0825C382FF00CAAD06 /* background5.png in Resources */,
 				2935410325BA3EEB001500B3 /* LaunchScreen.storyboard in Resources */,
 				2925B19525BB66BD00A3824B /* background1.png in Resources */,
 				2925B19E25BB6C9200A3824B /* background2.png in Resources */,
