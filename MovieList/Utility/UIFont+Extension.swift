@@ -5,4 +5,10 @@
 //  Created by Leonardo Diaz on 1/28/21.
 //
 
-import Foundation
+import UIKit
+
+extension UIFont {
+    static func customFont(name: String = "NotoSansOriya", textStyle: TextStyle) -> UIFont {
+        return UIFont(name: name, size: UIFont.preferredFont(forTextStyle: textStyle).pointSize) ?? UIFont.preferredFont(forTextStyle: textStyle)
+    }
+}
