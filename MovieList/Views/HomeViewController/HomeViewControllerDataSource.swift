@@ -11,22 +11,22 @@ enum Section {
     case main
 }
 
-class HomeViewControllerDataSource:UICollectionViewDiffableDataSource<Section, Movie> {
-    init(collectionView: UICollectionView) {
-        super.init(collectionView: collectionView) { (collectionView, indexPath, movie) -> UICollectionViewCell? in
-            let cellConfiguration = UICollectionView.CellRegistration<UICollectionViewListCell, Movie> { (cell, indexPath, movie) in
-                var content = cell.defaultContentConfiguration()
-                content.text = movie.title
-                cell.contentConfiguration = content
-            }
-            let cell = collectionView.dequeueConfiguredReusableCell(using: cellConfiguration, for: indexPath, item: movie)
+class HomeViewControllerDataSource:UITableViewDiffableDataSource<Section, MovieViewModel> {
+    var movieManager: MovieManager
+    init(tableView: UITableView, movieManager: MovieManager = MovieManager()) {
+        self.movieManager = movieManager
+        super.init(tableView: tableView) { (tableView, indexPath, movieVM) -> UITableViewCell? in
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: MovieTableViewCell.reuseIdentifier) as? MovieTableViewCell else { return UITableViewCell() }
+            cell.movieViewModel = movieVM
+            cell.selectionStyle = .none
             return cell
         }
     }
     
     func applyData(animated: Bool = true) {
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Movie>()
+        var snapshot = NSDiffableDataSourceSnapshot<Section, MovieViewModel>()
         snapshot.appendSections([.main])
+        snapshot.appendItems(movieManager.movies, toSection: .main)
         apply(snapshot, animatingDifferences: animated)
     }
 }
