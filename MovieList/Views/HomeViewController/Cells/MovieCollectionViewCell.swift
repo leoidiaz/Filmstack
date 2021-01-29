@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class MovieTableViewCell: UITableViewCell {
+class MovieCollectionViewCell: UICollectionViewCell {
     //MARK: - Properties
     lazy var background = UIImageView()
     lazy var title = UILabel()
@@ -19,8 +19,8 @@ class MovieTableViewCell: UITableViewCell {
         }
     }
     
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         addSubview(background)
         addSubview(title)
         layout()
@@ -36,6 +36,7 @@ class MovieTableViewCell: UITableViewCell {
         guard let movieView = movieViewModel  else { return }
         background.contentMode = .scaleToFill
         background.image = movieView.background
+        background.heroID = movieView.title
         title.text = movieView.title
         title.font = UIFont.preferredFont(forTextStyle: .title1)
         title.textColor = .white
