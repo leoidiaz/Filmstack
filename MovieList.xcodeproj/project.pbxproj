@@ -26,6 +26,7 @@
 		29929B1225BCD54C00477575 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29929B1125BCD54C00477575 /* HeaderView.swift */; };
 		29D42B0825C382FF00CAAD06 /* background5.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D42B0625C382FF00CAAD06 /* background5.png */; };
 		29D42B0925C382FF00CAAD06 /* background6.png in Resources */ = {isa = PBXBuildFile; fileRef = 29D42B0725C382FF00CAAD06 /* background6.png */; };
+		29D42B0C25C3888E00CAAD06 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D42B0B25C3888E00CAAD06 /* UIFont+Extension.swift */; };
 		29ED2A2E25C20F6A00713192 /* AddMovieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ED2A2D25C20F6A00713192 /* AddMovieView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		29929B1125BCD54C00477575 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		29D42B0625C382FF00CAAD06 /* background5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background5.png; sourceTree = "<group>"; };
 		29D42B0725C382FF00CAAD06 /* background6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background6.png; sourceTree = "<group>"; };
+		29D42B0B25C3888E00CAAD06 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		29ED2A2D25C20F6A00713192 /* AddMovieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				2925B1B825BB84FC00A3824B /* Identifier+Extension.swift */,
+				29D42B0B25C3888E00CAAD06 /* UIFont+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				293540F725BA3EE9001500B3 /* AppDelegate.swift in Sources */,
 				2925B18A25BB65F700A3824B /* MovieManager.swift in Sources */,
 				29929B1225BCD54C00477575 /* HeaderView.swift in Sources */,
+				29D42B0C25C3888E00CAAD06 /* UIFont+Extension.swift in Sources */,
 				293540F925BA3EE9001500B3 /* SceneDelegate.swift in Sources */,
 				2935411A25BA4521001500B3 /* HomeViewController.swift in Sources */,
 				2935412125BA4AC0001500B3 /* Movie.swift in Sources */,
