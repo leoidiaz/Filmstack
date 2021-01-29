@@ -17,4 +17,4 @@ extension Identifier {
     }
 }
 
-extension UITableViewCell: Identifier { } 
+extension UICollectionViewCell: Identifier { } 
