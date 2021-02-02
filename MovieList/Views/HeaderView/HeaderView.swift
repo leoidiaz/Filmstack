@@ -38,9 +38,10 @@ extension HeaderView {
         mainTitleLabel.font = UIFont.customFont(textStyle: .largeTitle)
         scrollTitleLabel.font = UIFont.customFont(textStyle: .title3)
         addButton.addTarget(self, action: #selector(highlightButton(sender:)), for: .touchUpInside)
-        accountButton.addTarget(self, action: #selector(highlightButton(sender:)), for: .touchUpInside)
+        accountButton.addTarget(self, action: #selector(highlightButton(sender:)), for: .touchCancel)
+        accountButton.showsMenuAsPrimaryAction = true
         addButton.setImage(UIImage(systemName: "plus.rectangle.on.rectangle", withConfiguration: UIImage.SymbolConfiguration(scale: .large)), for: .normal)
-        accountButton.setImage(UIImage(systemName: "person.crop.circle", withConfiguration: UIImage.SymbolConfiguration(scale: .large)), for: .normal)
+        accountButton.setImage(UIImage(systemName: "line.horizontal.3.decrease.circle", withConfiguration: UIImage.SymbolConfiguration(scale: .large)), for: .normal)
         addButton.tintColor = .label
         accountButton.tintColor = .label
         scrollTitleLabel.alpha = 0.0
@@ -72,7 +73,7 @@ extension HeaderView {
         
         scrollTitleLabel.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().inset(10)
+            make.bottom.equalTo(snp.bottomMargin)
         }
     }
 }
