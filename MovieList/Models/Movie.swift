@@ -12,4 +12,5 @@ struct Movie: Hashable {
     let director: String
     let releaseDate: String
     let backgroundImage: UIImage
+    let posterImage: UIImage
 }
