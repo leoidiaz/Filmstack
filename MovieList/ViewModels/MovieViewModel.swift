@@ -20,12 +20,16 @@ struct MovieViewModel: Hashable {
         return movie.director
     }
     
-    //TODO: Release Data from Date -> String
+
     var release: String {
         return movie.releaseDate
     }
     
     var background: UIImage {
         return movie.backgroundImage
+    }
+    
+    var posterImage: UIImage {
+        return movie.posterImage
     }
 }
