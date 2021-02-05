@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIFont {
-    static func customFont(name: String = "NotoSansOriya", textStyle: TextStyle) -> UIFont {
+    static func customFont(name: String = "HelveticaNeue-Medium", textStyle: TextStyle) -> UIFont {
         return UIFont(name: name, size: UIFont.preferredFont(forTextStyle: textStyle).pointSize) ?? UIFont.preferredFont(forTextStyle: textStyle)
     }
 }
