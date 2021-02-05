@@ -44,6 +44,7 @@ extension MovieDetailsView {
         releaseLabel.font = UIFont.customFont(textStyle: .title2)
         
         watchButton.setTitle("Watch Now", for: .normal)
+        watchButton.titleLabel?.font = UIFont.customFont(textStyle: .body)
         watchButton.backgroundColor = .label
         watchButton.setTitleColor(.systemBackground, for: .normal)
         
