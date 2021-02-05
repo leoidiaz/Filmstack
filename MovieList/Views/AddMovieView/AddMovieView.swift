@@ -15,6 +15,7 @@ class AddMovieView: UIView {
     lazy var closeButton = UIButton(type: .close)
     lazy var titleLabel = UILabel()
     lazy var addButton = UIButton()
+    lazy var addFilmsStack = UIStackView()
     
     //MARK: - Init
     override init(frame: CGRect) {
@@ -66,16 +67,19 @@ extension AddMovieView {
         addButton.layer.cornerRadius = 10
         addSubview(container)
         container.addSubview(closeButton)
-        container.addSubview(titleLabel)
-        container.addSubview(addButton)
+        container.addSubview(addFilmsStack)
+        addFilmsStack.addArrangedSubview(titleLabel)
+        addFilmsStack.addArrangedSubview(addButton)
+        addFilmsStack.axis = .vertical
+        addFilmsStack.alignment = .center
+        addFilmsStack.distribution = .fillEqually
+        addFilmsStack.spacing = 15
     }
     
     private func setupLayout(){
         container.snp.makeConstraints { (make) in
-            make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview()
+            make.centerX.bottom.width.equalToSuperview()
             make.height.equalToSuperview().multipliedBy(0.25)
-            make.width.equalToSuperview().multipliedBy(1)
         }
         
         closeButton.snp.makeConstraints { (make) in
@@ -83,15 +87,13 @@ extension AddMovieView {
             make.trailing.equalTo(container.snp.trailingMargin)
         }
         
-        titleLabel.snp.makeConstraints { (make) in
-            make.centerX.equalTo(container)
-            make.top.equalTo(container.snp.top).offset(60)
+        addFilmsStack.snp.makeConstraints { (make) in
+            make.center.equalTo(container)
+            make.width.equalTo(container).multipliedBy(0.9)
         }
         
         addButton.snp.makeConstraints { (make) in
-            make.width.equalTo(container).multipliedBy(0.3)
-            make.centerX.equalTo(container)
-            make.bottom.equalTo(container.safeAreaLayoutGuide.snp.bottomMargin).offset(-15)
+            make.width.equalTo(addFilmsStack).multipliedBy(0.3)
         }
     }
 }
