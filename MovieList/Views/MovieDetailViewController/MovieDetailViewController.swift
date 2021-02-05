@@ -71,7 +71,7 @@ extension MovieDetailViewController {
         movieDetailsView.snp.makeConstraints { (make) in
             make.top.equalTo(backgroundImage.snp.bottomMargin).offset(30)
             make.leading.trailing.equalToSuperview()
-            make.bottom.equalTo(view.snp.bottomMargin).offset(-50)
+            make.bottom.equalTo(view.snp.bottomMargin)
         }
         
         closeButton.snp.makeConstraints { (make) in
