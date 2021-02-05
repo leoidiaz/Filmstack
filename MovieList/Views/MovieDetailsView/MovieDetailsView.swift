@@ -89,15 +89,14 @@ extension MovieDetailsView {
         
         
         imageStack.snp.makeConstraints { (make) in
-            make.top.equalTo(titleLabel.snp.bottomMargin).offset(40)
-            make.centerX.equalToSuperview()
+            make.center.equalToSuperview()
             make.width.equalToSuperview().multipliedBy(0.9)
         }
         
         watchButton.snp.makeConstraints { (make) in
             make.bottom.equalTo(snp.bottomMargin)
             make.centerX.equalToSuperview()
-            make.width.equalToSuperview().multipliedBy(0.8)
+            make.width.equalToSuperview().multipliedBy(0.4)
         }
     }
 }
