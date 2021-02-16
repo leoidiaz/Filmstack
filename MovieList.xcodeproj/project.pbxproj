@@ -49,7 +49,7 @@
 		2925B19D25BB6C9200A3824B /* background3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background3.png; sourceTree = "<group>"; };
 		2925B1B825BB84FC00A3824B /* Identifier+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Identifier+Extension.swift"; sourceTree = "<group>"; };
 		2925B1BC25BB898F00A3824B /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
-		293540F325BA3EE9001500B3 /* MovieList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		293540F325BA3EE9001500B3 /* Filmstack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Filmstack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		293540F625BA3EE9001500B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		293540F825BA3EE9001500B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		293540FF25BA3EEB001500B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		293540F425BA3EE9001500B3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				293540F325BA3EE9001500B3 /* MovieList.app */,
+				293540F325BA3EE9001500B3 /* Filmstack.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -278,7 +278,7 @@
 				2935412425BA5234001500B3 /* SnapKit */,
 			);
 			productName = MovieList;
-			productReference = 293540F325BA3EE9001500B3 /* MovieList.app */;
+			productReference = 293540F325BA3EE9001500B3 /* Filmstack.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -505,7 +505,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leonardo.MovieList;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Filmstack;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -523,7 +523,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leonardo.MovieList;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Filmstack;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
